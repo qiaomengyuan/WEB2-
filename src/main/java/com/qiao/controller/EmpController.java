@@ -55,6 +55,7 @@ public class EmpController {
     @GetMapping("/{id}")
     public  Result getById(@PathVariable Integer id){
         log.info("查询员工的id为");//查询员工
+        log.info("查询员工的id1为");//查询员工
         Emp emp = empService.getById(id);
         return Result.success(emp);
 
