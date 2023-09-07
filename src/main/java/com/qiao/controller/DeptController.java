@@ -40,7 +40,7 @@ public class DeptController {
     public Result list(@PathVariable Integer id){
         log.info("根据id删除部门master:{}",id);
         log.info("根据id删除部门hotfix-test:{}",id);
-        log.info("根据id1删除部门乔梦圆完美运行:{}",id);
+        log.info("根据id1删除部门乔梦圆完美运行111:{}",id);
         deptService.delete(id);
         return Result.success();
     }
