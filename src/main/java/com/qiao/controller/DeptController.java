@@ -38,7 +38,7 @@ public class DeptController {
     @Log
     @DeleteMapping("{id}")
     public Result list(@PathVariable Integer id){
-        log.info("根据id删除部门:{}",id);
+        log.info("根据id删除部门hotfix-test:{}",id);
         log.info("根据id1删除部门乔梦圆:{}",id);
         deptService.delete(id);
         return Result.success();
